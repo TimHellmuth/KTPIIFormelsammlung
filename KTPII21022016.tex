@@ -1,0 +1,1410 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\author{Tim Hellmuth}
+\renewcommand {\familydefault}{\sfdefault}
+\makeindex
+\title{Formelsammlung Klassische Theoretische Physik II}
+\begin{document}
+\maketitle
+\shorthandoff{"}
+\paragraph{Grundbegriffe der Magnetostatik} $\,$ \\
+Gitterkomplex $k$ (Zellen mit innerer Orientierung) \\
+Dualer Komplex $ \tilde{k} $ (Zellen mit äußerer Orientierung)\\
+Tautologische Paarung \\
+\begin{align}
+C_k(K) \otimes C^k \longrightarrow R
+\end{align}
+\begin{align}
+c \otimes \omega \longmapsto \int_c \omega
+\end{align}
+Schnittpaarung
+\begin{align}
+C^{d-k} \otimes C^k \longrightarrow R \; (d=3)
+\end{align}
+\begin{align}
+\gamma \otimes \omega \longmapsto \int \gamma \wedge \omega
+\end{align}
+Kanonischer Isomorphismus
+\begin{align}
+I : C_k(k) \longrightarrow C^{d-k} (\tilde{k})
+\end{align}
+\begin{align}
+\int_c \omega = \int I (c) \wedge \omega
+\end{align}
+\paragraph{Magnetostatische Grundgesetze}
+\begin{align}
+dB=0
+\end{align}
+Die 1-Kette $ B \in C_1 (\tilde{K}) $ ist geschlossen (randlos); oder: magnetische Flusslinien haben keinen Anfang und kein Ende.
+\begin{align}
+dH=j
+\end{align}
+Die 2-Kette $ H \in C_2 (k) $ der magnetischen Erregung wird berandet von der 1-Kette $ j \in C_1 (k) $ der elektrischen Stromdichte.
+\begin{align}
+B = \mu_0 * H
+\end{align}
+Die (Fluss-)Linien von $B$ stehen senkrecht auf dem (Erregungs-)Flächen von $H$.\\
+Bemerkung: Die Geometrie des Raumes geht nur in die Materialgleichung ein.
+\paragraph{Das innere Produkt} $\,$ \\
+\begin{align}
+\iota (v) : \Omega^k(M) \longrightarrow \Omega^{k-1} (M)
+\end{align}
+\begin{align}
+\iota (v) ( \alpha \wedge \beta )= ( \iota (v) \alpha ) \wedge \beta + (-1)^{deg(\alpha )} \alpha ( \iota (v) \beta ) 
+\end{align}
+\begin{align}
+\iota(v) B= \frac{1}{2} \sum_{i,j} B_{ij} (v^i dx^j - dx^i v^j)= \sum_j (\sum_i v^i B_{ij}) dx^j
+\end{align}
+\paragraph{Lorentz-Kraft} $\,$ \\
+\begin{align}
+F= q (E_p- \iota (v) B_p)
+\end{align}
+In irgendwelchen Koordinaten
+\begin{align}
+F_j=q(E_j(p)-\sum_i v^i B_{ij} (p))
+\end{align}
+\paragraph{Messvorschrift für $B$} $\,$ \\
+1.Teile die Randlinien von $ \Sigma $ in zwei Hälften $ \gamma_1, \gamma_2 $ (gleich lang) mit $ \partial \Sigma = \gamma_1 - \gamma_2 $. \\
+2. Verlege stromführendes Kabel (flexibel) längs $ \gamma_1 $. \\
+3. Bewege Kabel (bei festgehaltenen Teststrom $ I \neq 0 $ und festgehaltenen Positionen $ A, B$ ) vom Anfangsverlauf $\gamma_1 $ längs $\Sigma $ zum Endumlauf $ \gamma_2 $ und messe die dabei verrichtete Arbeit $ W$.\\
+Daraus resultiert:
+\begin{align}
+\frac{W}{I}= \int_{\Sigma} B
+\end{align}
+\paragraph{Anschlussbedingung an Grenzflächen} $\,$ \\
+Grenzfläche $\Sigma $ verlaufe zwischen Gebiet/Medium 1 und Gebiet/ Medium 2. Die Fläche $\Sigma $ trage die Linienstromdichte $ k \in \tilde{\Omega}^1 (\Sigma) $. Dann haben wir: \\
+(a) $H_{tang} $ springt (durch $\Sigma$) um $k$.  \\
+(b) $B_{tang} $ ist stetig durch $\Sigma$. 
+\paragraph{Magnetostatische Aufgaben mit euklidischer Symmetrie (unendlich lange, gerade Spule)} $\,$ \\
+\begin{align}
+H= \frac{I}{a} \chi_{Zylinder} [dz;R]
+\end{align}
+\begin{align}
+B= \frac{\mu_0 I}{a} \chi_{Zylinder} dx \wedge dy
+\end{align}
+\paragraph{Messvorschrift für $H$} $\,$ \\
+(Analog zur Messung von $ \int_S D $ mittels Maxwellscher Doppelplatten) \\
+1. Supraleitendes Rohr (dünn) der Kurve $ \tilde{\gamma} $ nachbilden.\\
+2. Das SLVR entmagnetisieren ("zero-field quench") und an den Messort $\tilde{\gamma} $ bringen. \\
+3. Den um das SLVR zirkulierenden Gesamtstrom $I_S$ messen. \\
+Daraus resultiert:
+\begin{align}
+-I_S=\int_{\tilde{\gamma}} H
+\end{align}
+\paragraph{Natur der elektromagnetischen Feldgrößen} $\,$ \\
+\begin{align}
+E \in \Omega^1 (E_3) \; \text{gerade 1-Form}
+\end{align}
+\begin{align}
+D \in \tilde{\Omega}^2(E_3) \; \text{ungerade 2-Form}
+\end{align}
+\begin{align}
+B \in \Omega^2 (E_3) \; \text{gerade 2-Form}
+\end{align}
+\begin{align}
+H \in \tilde{\Omega}^1(E_3) \; \text{ungerade 1-Form}
+\end{align}
+\paragraph{Physikalische Dimensionen}
+\begin{align}
+[E]= \frac{Energie}{Ladung}
+\end{align}
+\begin{align}
+[D]= Ladung
+\end{align}
+\begin{align}
+[B]= \frac{Energie}{Strom}
+\end{align}
+\begin{align}
+[H]= Strom
+\end{align}
+\paragraph{Relative Dimensionen}
+\begin{align}
+E= \sum_{i=1}^3 E_i dx^i \rightsquigarrow [E_i]=\frac{Energie}{Ladung \cdot Laenge}
+\end{align}
+\begin{align}
+D=\sum_{i<j} D_{ij} [dx^i \wedge dx^j ; Or] \rightsquigarrow [D_{ij}]=\frac{Ladung}{Länge^{(d-1)}}
+\end{align}
+\begin{align}
+B= \sum_{i<j} B_{ij} dx^i \wedge dx^j \rightsquigarrow [B_{ij}]=\frac{Energie}{Strom \cdot Flaeche}
+\end{align}
+\begin{align}
+H= \sum_{i=1}^3 H_i [dx^i ; Or] \rightsquigarrow [H_i]= \frac{Strom}{Laenge^{(d-2)}}
+\end{align}
+\paragraph{Einheiten} $\,$ \\
+\begin{align}
+[\epsilon_0] = \frac{Ladung^2}{Energie \cdot Laenge} = \frac{Kapazitaet}{Laenge} \\
+\epsilon_0 = 8,854 \cdot 10^{-12} \frac{C^2}{Jm}
+\end{align}
+\begin{align}
+[\mu_0]= \frac{Energie}{Strom^2 \cdot Laenge} =\frac{Induktivitaet}{Laenge} \\
+\mu_0 = 4 \pi \cdot 10^{-7}
+\end{align}
+\paragraph{Dualität zwischen Elektro- und Magnetostatik} $\,$ \\
+\begin{align}
+-\frac{1}{\nu} D_{1_{Dipolschicht}} = \frac{1}{\mu_0 I} [B_{Stromschleife} ; Or]
+\end{align}
+Wir berechnen das elektrische Skalarpotential $ \Phi $ der Dipolschicht mit der aus der Elektrostatik bekannten Lösung für die Poisson-Gleichung (zu $ \Phi (\infty) =0 $)
+\begin{align}
+\Phi (p)= \frac{\nu}{\epsilon_0} \int_S \frac{\tau_p}{4 \pi}
+\end{align}
+\paragraph{Laplace-Operator auf Formen} $\, $ \\
+\begin{align}
+\delta = (-1)^{k-1} *^{-1} d * \text{auf k-Formen}
+\end{align}
+\begin{align}
+\Delta = \delta d + d \delta
+\end{align}
+\paragraph{Vektorpotential und Coulomb-Eichung} $\,$ \\
+Löse
+\begin{align}
+dB=0
+\end{align}
+durch folgenden Ansatz:
+\begin{align}
+B=dA \; \text{A als das Vektorpotential oder Eichpotential}
+\end{align}
+Coulomb-Eichung
+\begin{align}
+\delta A =0 ( \Leftrightarrow d*A=0)
+\end{align}
+Poisson-Gleichung für $A$
+\begin{align}
+-\triangle A = \mu_0 * j
+\end{align}
+Lösung für kartesischen Koordinaten:
+\begin{align}
+A_i (p) = \frac{\mu_0}{4 \pi} \int_{E_3} \frac{(*j)_i}{r_p} dvol
+\end{align}
+\paragraph{Multipolentwicklung}
+\begin{align}
+A_k = \frac{\mu_0}{4 \pi} \sum_l \frac{x_l}{r^3} m_{lk}+...
+\end{align}
+\begin{align}
+m_{lk}= \int_U j \wedge x_l dx_k=-m_{kl}
+\end{align}
+\paragraph{Induktionskoeffizienten}
+\begin{align}
+\xi_{magn}= \frac{1}{2} \sum_{k,l} L_{kl} I_k I_l
+\end{align}
+\begin{align}
+L_{kl}= \frac{\mu_0}{4 \pi} \int_{\gamma_k} \int_{\gamma_l} \frac{\sum dx_i \wedge dx_i'}{\sqrt{\sum (x_i-x_i')^2}}
+\end{align}
+\paragraph{Biot-Savart-Gesetz} $\,$ \\
+Darunter verstehen wir die Lösung des Ampere-Gesetzes $ dH=j$ für die magnetische Erregung $H$ unter der Bedingung $ \delta H=0 \; (\Leftrightarrow dB = 0) $. Im Formenkalkül hat man Folgendes ( für einen Punkt $ p \in E_3 $)
+\begin{align}
+H_p= \int_{E_3} \frac{\iota (p- \cdot ) j}{4 \pi \vert p- \cdot \vert^3} dvol_{\cdot}
+\end{align}
+In Kontraktion mit einem (axialen) Vektor $ v \in V \simeq \mathbb{R}^3 $
+\begin{align}
+H_p(v)= \int_{E_3} \frac{j_{\cdot} (p- \cdot , v)}{4 \pi \vert p- \cdot \vert^3} dvol_{\cdot}
+\end{align}
+In kartesischen Koordinaten
+\begin{align}
+H_k (r) = \int_{E_3} \frac{\sum_l (r-r')^l j_{lk} (r')}{4 \pi \vert r-r' \vert^3} d^3r'
+\end{align}
+\paragraph{Induktionsgesetz} $\,$ \\
+Differentielle Form
+\begin{align}
+dE=- \dot{B}
+\end{align}
+Integrierte Form
+\begin{align}
+\oint_{\partial \Sigma } E = - \int \int_{\Sigma} \dot{B}
+\end{align}
+\paragraph{Ampere-Maxwell-Gesetz} $\, $
+Differentielle Form
+\begin{align}
+dH= j+ \dot{D}
+\end{align}
+Integrierte Form
+\begin{align}
+\oint_{\partial S} H= \int \int_S (j+\dot{D})
+\end{align}
+\paragraph{Lie-Ableitung}
+\begin{align}
+\mathcal{L}_v \omega= \frac{d}{dt} \vert_{t=0} \varphi_t* \omega
+\end{align}
+Cartan-Formel
+\begin{align}
+\mathcal{L}_v= \iota (v) \cdot d + d \cdot (v)
+\end{align}
+\paragraph{Beispiel: Gerade Stromlinie} $\, $ \\
+\begin{align}
+j=I \gamma\; (\gamma: z-Achse)
+\end{align}
+\begin{align}
+D_-= -\frac{Q}{2 \pi a} [d \phi \wedge dz ; R]= -D_+
+\end{align}
+\begin{align}
+v= -\vert v \vert \partial_z
+\end{align}
+\begin{align}
+H=- \iota (v) D_- = \frac{I}{2 \pi} [ d \phi ; R]
+\end{align}
+\begin{align}
+I=\frac{Q \vert v \vert}{a}
+\end{align}
+\paragraph{Beispiel: Lange gerade Spule (Symmetrieachse: z-Achse)} $\,$ \\
+\begin{align}
+j= \sum_{i=1}^N I \partial \Sigma _i
+\end{align}
+\begin{align}
+D_-= \frac{Q}{2 \pi a} \chi_{Zylinder} [d \phi \wedge dz ; R] =-D_+
+\end{align}
+\begin{align}
+v= - \omega \partial_{\psi}
+\end{align}
+\begin{align}
+H= - \iota (v) D_-= \frac{I}{a} [ dz;R]
+\end{align}
+\begin{align}
+I=\frac{Q \omega}{2 \pi}
+\end{align}
+\paragraph{Allgemeine Form des Induktionsgesetzes} $\,$ \\
+\begin{align}
+\frac{d}{dt} \varphi (t) = -\oint_{\partial \Sigma_t} (E- \iota (v) B)
+\end{align}
+Beispiel: Rotierende Leiterschleife im konstanten Magnetfeld ($ \dot{B} = 0$)
+\begin{align}
+\varphi (t) = \varphi (0) cos(wt+\phi)
+\end{align}
+\begin{align}
+-\frac{d}{dt} \varphi (t) = -\oint \iota (v) B
+\end{align}
+\paragraph{Energiesatz} $\,$ \\
+Energiedichte
+\begin{align}
+u= \frac{1}{2} (E \wedge D + B \wedge H) \in \tilde{\Omega}^3 (E_3)
+\end{align}
+Energiestromdichte
+\begin{align}
+s= E \wedge H \in \tilde{\Omega}^2 (E_3) \; \text{Poynting-Form}
+\end{align}
+Integralform des Energiesatzes im Vakuum
+\begin{align}
+\frac{d}{dt} \iiint_V = - \int \oint_{\partial V} s 
+\end{align}
+Bilanz der Feldenergie in $V=- $ Leistung des Feldes an der Materie in $V$
+\begin{align}
+\frac{d}{dt} \iiint_V + \oint \oint_{\partial V} s = -\iiint_V E \wedge j
+\end{align}
+\paragraph{Spule in Bewegung: Relativitätsprinzip} $ \,$ \\
+\begin{align}
+B= b \chi dx \wedge dy
+\end{align}
+\begin{align}
+E= \iota  (v) B = \vert v \vert b \chi dy
+\end{align}
+\begin{align}
+\frac{1}{\mu_0} * B = \frac{b}{\mu_0} \chi [dz;R]
+\end{align}
+\begin{align}
+D= \epsilon_0 * E = \epsilon_0 \vert v \vert b \chi [dz \wedge dx ;R]
+\end{align}
+\begin{align}
+\rho= dD= \epsilon_0 \vert v \vert b \frac{\partial \chi}{\partial y} dvol
+\end{align}
+\begin{align}
+j= dH-\dot{D}= \frac{b}{\mu_0} [d \chi \wedge dz ;R] - \epsilon_0 \vert v \vert^2 b \frac{\partial \chi}{\partial x} [ dx \wedge dz ;R]
+\end{align}
+Die charakteristische Funktion $ \chi$ des Spulengebietes ist zeitabhängig. Im Galilei-Modell der Raum-Zeit erwartet man:
+\begin{align}
+\chi= \Theta (L^2-(x-\vert v \vert t )^2 -y^2)
+\end{align}
+Die Magnetfeldstärke muss konstant sein, weil man sonst Ladung und Ströme im Inneren des Spulengebiets hätte.\\
+Die Beziehung 
+\begin{align}
+E= \iota (v) B
+\end{align}
+folgt aus dem Relativitätsprinzip. In der Tat wirkt auf eine in IS-0 ruhenden Testladen $q$ die Nullkraft
+\begin{align}
+q (E^{(0)} - \iota (0) B^{(0)}) =0
+\end{align}
+(wegen $E^{(0)} =0 $) , und dann muss die Testladung nach dem Relativitätsprinzip auch in IS-1 kräftefrei sein, also:
+\begin{align}
+q(E- \iota (v) B)=0
+\end{align}
+Die Verschiebungsstromdichte berechnet sich wie folgt:
+\begin{align}
+-\dot{D}= \mathcal{L}_v D = \epsilon_0 \vert v \vert b (\mathcal{L}_v \chi) [dz \wedge dx ; R]
+\end{align}
+\begin{align}
+\mathcal{L}_v \chi = \iota (v) d \chi = \vert v \vert \frac{\partial \chi}{\partial x}
+\end{align}
+Übergang von Inertialsystemen mittels Koordinatentransformation
+\begin{align}
+dx^{(0)}=dx^{(1)}-\vert v \vert dt^{(1)}
+\end{align}
+\begin{align}
+dt^{(0)}= dt^{(1)}
+\end{align}
+\begin{align}
+dy^{(0)}= dy^{(1)}
+\end{align}
+\begin{align}
+dz^{(0)}= dz^{(1)}
+\end{align}
+Diese Sichtweise ("passive Transformation") ist physikalisch natürlich.\\
+"Aktive Transformation" als Abbildung zwischen Inertialsystemen.
+\begin{align}
+\Psi^{-1*} (dx) =dx- \vert v \vert dt
+\end{align}
+\begin{align}
+\Psi^{-1*}(dt)=dt
+\end{align}
+\begin{align}
+\Psi^{-1*}(dy)=dy
+\end{align}
+\begin{align}
+\Psi^{-1*}(dz)=dz
+\end{align}
+Beide Sichtweisen sind mathematisch äquivalent, jedoch weist letztere Vorteile in Rechnung und Notation auf.
+\paragraph{Äußere Ableitung in Raum und Zeit} $\,$ \\
+\begin{align}
+d= d+ dt \wedge \frac{\partial}{\partial t}
+\end{align}
+\paragraph{Faraday-Form} $\, $ \\
+\begin{align}
+F= B+ e \wedge dt \in \Omega ^2 (M_4)
+\end{align}
+\begin{align}
+[F]=\frac{Energie}{Strom} = \frac{Wirkung}{Ladung}
+\end{align}
+\begin{align}
+dF=0
+\end{align}
+\paragraph{Viererstrom} $\, $ \\
+\begin{align}
+J= \rho -j \wedge dt \in \tilde{\Omega}^3 (M_4)
+\end{align}
+\begin{align}
+[J]= Ladung
+\end{align}
+\begin{align}
+dJ=0
+\end{align}
+\paragraph{Minkowski-Modell} $\,$\\
+Übergang von einer ruhenden Spule (IS-0) zu einer bewegten Spule (IS-1).
+\begin{align}
+\Psi^{-1*} (dx)= \alpha dx + \beta dt
+\end{align}
+\begin{align}
+\Psi^{-1*} (dt) = \alpha' dt + \beta' dx
+\end{align}
+\begin{align}
+\Psi^{-1*} (dy)= dy
+\end{align}
+\begin{align}
+\Psi^{-1*} (dz)= dz
+\end{align}
+Rechnung für den Viererstrom
+\begin{align}
+\Psi^{-1*} J^{(0)} = - \frac{b^{(0)}}{\mu_0} [d \chi \wedge dz ; R] \wedge \xi^{-1*} (dt) = \\
+\\ -\frac{b^{(0)}}{\mu_0} [(d \chi + \cdot{\chi} dt) \wedge dz ;R] \wedge ( \alpha' dt + \beta' dx ) = \\
+\\ \frac{b^{(0)}}{\mu_0}  d \chi \wedge dz ; R ] \wedge \alpha' dt - \frac{b^{(0)}}{\mu_0} [ \frac{ \partial \chi}{\partial y} dy \wedge dz ; R ] \wedge \beta' - \frac{b^{(0)}}{\mu_0} [\cdot{\chi} dt \wedge dz ;R] \wedge \beta' dx
+\end{align}
+Durch die korrekte Wahl der Parameter $ \alpha' $ und $ \beta ' $ wird die gewünschte Formel erfüllt.
+\begin{align}
+\Psi^{-1*} J^{(0)} = J
+\end{align}
+Daraus folgt
+\begin{align}
+\Psi^{-1*} (dx) = \alpha (dx- \vert v \vert dt) 
+\end{align}
+\begin{align}
+\Psi^{-1*}= \alpha ( x - \vert v \vert t ) + const \;\text{( const=0)}
+\end{align}
+Abschließend
+\begin{align}
+\iint B = b \iint \chi dx \wedge dy = b \iint \Theta (L^2- \alpha (x- \vert v \vert t)^2-y^2)dx \wedge dy\\ = \frac{b}{\alpha} \iint \Theta (L^2-x^2-y^2) dx \wedge dy = b^{(0)} \iint \chi^{(0)} dx \wedge dy = \iint B^{(0)}
+\end{align}
+Der magnetische Fluss durch den Spulenquerschnitt hat also in IS-0 und IS-1 den gleichen Wert. \\
+Analog zu Obigem kann gezeigt werden, dass die Gesamtladung nicht nur zeitunabhängig, sondern auch für alle Beobachter gleich ist. (Hingegen ist die Ladungsdichte vor Integration zeitabhängig und beobachterabhängig).\\
+(Jedoch ist der magnetische Fluss wieder zeit- und beobachterunabhängig)\\
+Wirkungsfunktional des elektromagnetischen Feldes
+\begin{align}
+D_{E.M.} = \int (E \wedge D - B \wedge H) \wedge dt
+\end{align}
+Lorentz-Transformation
+\begin{align}
+\Psi^{-1*} (dx) =\frac{dx- \frac{\vert v \vert}{c} cdt}{\sqrt{1-\frac{(\vert v \vert)^2}{c^2}}} = cosh(\Theta) dx - sinh (\Theta) cdt
+\end{align}
+\begin{align}
+\Psi ^{-1*} (cdt)= \frac{cdt- \frac{\vert v \vert}{c}dx}{\sqrt{1- \frac{(\vert v \vert)^2}{c^2}}}=-sin(\Theta) dx + cosh(\Theta) cdt
+\end{align}
+\begin{align}
+tanh(\Theta)= \frac{\vert v \vert}{c}
+\end{align}
+Invarianz des Weltvolumens unter Lorentz-Transformation
+\begin{align}
+\Psi^* (dx \wedge cdt) = dx \wedge cdt
+\end{align}
+Daraus folgt
+\begin{align}
+\int_{M_4} \chi dvol_4 = \int_{M_4}  ( \Psi^{-1*} \chi^{(0)}) dvol_4 = \int_{ \Psi^{-1*} (M_4)} \chi^{(0)} \xi* dvol_4 = \int_{M_4} \chi^{(0)} dvol_4 
+\end{align}
+\paragraph{Längenkontraktion} $\,$ \\
+\begin{align}
+D \Psi (e_1) = cosh(\Theta) e_1 + sinh(\Theta) e_0
+\end{align}
+\begin{align}
+D \Psi (e_0) = sinh(\Theta) e_1 + cosh( \Theta) e_0
+\end{align}
+\begin{align}
+l e_1 = \frac{e_1}{cosh(\Theta)}
+\end{align}
+\begin{align}
+l=\frac{1}{cosh(\Theta)} \;  \text{(Längenkontraktion)}
+\end{align}
+\paragraph{Zeitdiletation} $\,$ \\
+\begin{align}
+D \Psi (1 \cdot e_0) =sinh( \Theta) e_1  +  cosh(\Theta) e_0
+\end{align}
+\paragraph{Wellengleichung (für $B$) und Minkowski-Metrik} $\,$ \\
+Wellengleichung für B
+\begin{align}
+(\frac{1}{c^2} \frac{\partial^2}{\partial t^2}- \triangle ) B= \mu_0 d * j
+\end{align}
+Lösung im Vakuum ($J=0$)
+\begin{align}
+B=f(x-ct) dx \wedge dy
+\end{align}
+Anmerkung: Vektorfelder, partielle Ableitungen werden mit der Jacobi-Matrix transformiert.
+\begin{align}
+dx_j' = \sum_i \frac{\partial x_j'}{\partial x_i} \leftrightarrow \sum_J \frac{\partial x_J'}{\partial x_i} \frac{\partial}{\partial x_j'} = \frac{\partial }{\partial x_i}
+\end{align}
+Sowohl der Wellenoperator als auch die Minkowski-Metrik ist invariant
+\begin{align}
+\frac{1}{c^2} \frac{\partial^2}{\partial t^2}- \triangle = \square
+\end{align}
+\begin{align}
+g= -c^2dt^2+dx^2+dy^2+dz^2=-dx_0^2+dx_1^2+dx_2^2+dx_3^2
+\end{align}
+\paragraph{Raum-Zeit-Formulierung der Elektrodynamik} $\,$ \\
+Homogene Maxwell-Gleichung
+\begin{align}
+dB=0, dE= -\dot{B} \leftrightsquigarrow dF=0 \\ \text{für} F= B+E \wedge dt
+\end{align}
+Inhomogene Maxwell-Gleichungen
+\begin{align}
+dD= \rho , dH= j + \dot{D} \leftrightsquigarrow dG =J \\ \text{für} \; G= D-H \wedge dt , J= \rho =j \wedge dt
+\end{align}
+Materialgleichung
+\begin{align}
+D=\epsilon_0 * E, B= \mu_0 * H \leftrightsquigarrow ?
+\end{align}
+\paragraph{Hodge-Sternoperator für $M_4$ (Minkowski-Raum)} $\,$ \\
+Metrischer Tensor $(\cdot , \cdot)$ 
+\begin{align}
+\Omega^k(M_4) \times \Omega^k(M_4) \longrightarrow \Omega^0 (M_4)
+\end{align}
+\begin{align}
+(dx,dx)=(dy,dy)=(dz,dz)=1
+\end{align}
+\begin{align}
+(cdt,cdt)=-1
+\end{align}
+\begin{align}
+dvol_4= dvol_3 \wedge cdt \text{ ($dt$ orientiert durch Zukunftsrichtung)}
+\end{align}
+\begin{align}
+dx \wedge *dx = 1 \cdot dvol_4
+\end{align}
+\begin{align}
+dy \wedge * dx = dz \wedge *dx = dt \wedge *dx =0 
+\end{align}
+\begin{align}
+\Rightarrow *dx = [dy \wedge dz ;R] \wedge cdt= \iota (\partial_x) dvol_4
+\end{align}
+\begin{align}
+*(dx \wedge dy) = [dz;R] \wedge cdt
+\end{align}
+\begin{align}
+*(dz \wedge cdt) =-[dx \wedge dy ; R]
+\end{align}
+Materialgesetz
+\begin{align}
+G= - \sqrt{\frac{\epsilon_0}{\mu_0}} * F
+\end{align}
+\paragraph{Poincaré-Gruppe und Lorentz-Gruppe} $\,$ \\
+Poincaré-Gruppe \\
+Die Gruppe aller affinen Abbildungen $\Psi : M_4\longrightarrow M_4 $, deren linearer Teil $ L= D_o \Psi $ die Minkowski-Metrik erhält:
+\begin{align}
+g(Lu,Lv) = g(u,v) \;\forall u,v \in V \cong \mathbb{R}^4
+\end{align}
+Die Poincaré-Gruppe ist 10-dimensional und geht im nicht relativistischen Limes ($ \vert v \vert << c $) in die Galilei-Gruppe über.\\
+\\
+Lorentz-Gruppe \\
+\\
+Die Untergruppe von Ponicaré-Transformationen, die einen ausgewählten Weltpunkt ("Koordinatenursprung") festhalten, $\Psi (0)=0 $. \\
+Die Lorentzgruppe ist 6-dimensional und geht im nicht relativistischen Limes in das semidirekte Produkt der Drehgruppe mit einer Gruppe spezieller Galilei-Transformation über. Bezeichnung:
+\begin{align}
+O(V;g)=O(3,1)
+\end{align}
+Mitteilung:
+\begin{align}
+G=-\sqrt{\frac{\epsilon_0}{\mu_0}}*F
+\end{align}
+Die Invarianzgruppe von $G$ ist größer (konforme Gruppe)\\
+\\
+Raum-Zeit-Dilatation mit Fixpunkt $0$ :
+\begin{align}
+S: M_4 \longrightarrow M_4
+\end{align}
+\begin{align}
+p \longmapsto o+s(p-o)
+\end{align}
+Es gilt
+\begin{align}
+g(DS(u), DS(v))=s^2g(u,v) \neq g(u,v)\\
+(s \neq 1)
+\end{align}
+Also ist $DS$ keine Lorentz-Transformation (und $S$ keine Poincaré-Transformation). Dennoch gilt:
+\begin{align}
+G = -\sqrt{\frac{\epsilon_0}{\mu_0}}*F \Leftrightarrow S*F= - \sqrt{\frac{\epsilon_0}{\mu_0}}* S^* F
+\end{align}
+Es folgt, dass $S^*$ Vakuum-Lösungen ($J=0$) auf Vakuum-Lösungen abbilden.
+\paragraph{Elektrodynamik in Materie} $\,$ \\
+Aufteilung der Ladungen und Ströme in zwei Anteile
+\begin{align}
+\rho= \rho^{ext}+\rho^{mat}
+\end{align}
+\begin{align}
+j=j^{ext}+j^{mat}
+\end{align}
+Kontinuitätsgleichung
+\begin{align}
+\dot{\rho}^{ext} + dj^{ext}=0
+\end{align}
+Mit
+\begin{align}
+\dot{\rho} +dj=0
+\end{align}
+folgt auch die Kontinuitätsgleichung für Materieladungen und -ströme.
+Außerdem, verschwindet $\rho^{mat}$ nach Integration über den gesamten von Materie erfüllten Raumbereich.\\
+\\
+Elektrische Polarisation
+In einem polarisierbaren Medium bewirkt die Anwesenheit elektrische Felder eine Umorganisation der mikroskopischen Ladungen.
+Diese wird durch die elektrische Polarisation $P$ , eine 2-Form, quantitativ erfasst.
+\begin{align}
+P \in \tilde{\Omega}^2 (E_3)
+\end{align}
+Ist $V$ ein dreidimensionales Gebiet mit rand $ \partial V$, so folgt:
+\begin{align}
+\int_V \rho^{mat}= Q^{mat} (V) = -\int_{\partial V} P =- \int_V dP
+\end{align}
+Das Minuszeichen erklärt die Tatsache, dass das Hinausfließen positiver Ladung durch $ \partial V$ eine entsprechende negative Ladungen von $V$ zurücklässt.\\
+\\
+$V$ ist zudem beliebig:
+\begin{align}
+\rho^{mat}= -dP
+\end{align}
+Magnetisierung\\
+\\
+Das magnetische Analogon zu einem elektrisch polarisierbaren Medium ist ein Material, das sich unter dem Einfluss einer magnetischen Feldstärke $B$ magnetisch ordnet. Der orbitale Drehimpuls und der Spin von Elektronen in ungesättigten Atomhüllen ist Ursachen eines atomaren magnetischen Dipolmoment. Vereinfacht bewegen sich die Elektronen auf elliptischen Bahnen, was einem atomaren Kreisstrom und somit einem magnetischen Dipolmoment entspricht. Diese Kreisströme werden durch die Kraftwirkung der magnetischen Feldstärke polarisiert, d.h. sie richten sich partiell aus und addieren sich zu einem lokalen Gesamtstrom, dem sogenannten Magnetisierungsstrom.
+Die Magnetisierung, $M$, ist eine 1-Form.
+\begin{align}
+M \in \tilde{\Omega}^1(E_3)
+\end{align}
+Sei $S$ eine transversal orientierte Fläche und $I^{mat}(S)$ der gesamte Materiestrom durch $S$
+\begin{align}
+\int_S J^{mat} = I ^{mat}(S) = \frac{\partial}{\partial t} \int_s P + \int_{\partial S} M= \int_S (\dot{P} +dM)\\
+\Rightarrow j^{mat}= \dot{P} + dM
+\end{align}
+\paragraph{Maxwellsche Theorie in Materie} $\,$ \\
+\\
+Inhomogene Maxwell-Gleichung \\
+\\
+\begin{align}
+dD=\rho^{ext}
+\end{align}
+\begin{align}
+dH=j^{ext} + \dot{D}
+\end{align}
+Materialgleichungen
+\begin{align}
+D= \epsilon_0 * E + P[E]
+\end{align}
+\begin{align}
+H=\frac{1}{\mu_0} * B - M[B]
+\end{align}
+Homogene Maxwellgleichungen
+\begin{align}
+dE=-\dot{B}
+\end{align}
+\begin{align}
+dB=0
+\end{align}
+homogenes Dielektrikum
+\begin{align}
+D_{ij} (p,t)= \epsilon_0 \int_0^{\infty}
+(\int \sum_k \epsilon_{ij}^k (p-\cdot , t-s) E_k (\cdot , s) dvol)ds 
+\end{align}
+Für ein isotropes Medium im statischen Limes reduziert sich $ \epsilon_{ij}^k$ (dielektrischer Tensor) zu einer einzigen skalaren Größe $ \epsilon $:
+\begin{align}
+D=\epsilon_0 \epsilon * E
+\end{align}
+Homogenes Magnetikum
+\begin{align}
+B_{ij} (p,t)= \mu_0 \int_0^{\infty} ( \int \sum_k \mu_{ij}^k (p- \cdot , t-s) H_k (\cdot ,s)dvol)ds
+\end{align}
+Im selbigen Fall wie oben resultiert:
+\begin{align}
+B= \mu_0 \mu *H
+\end{align}
+\paragraph{Ohmsches Gesetz}
+\begin{align}
+j= o * E
+\end{align}
+Materialkonstante $ o$
+\begin{align}
+[o]= \frac{Strom}{Spannung \times Laenge}
+\end{align}
+\paragraph{Skin-Effekt}
+Ist ein metallischer Draht (der Dicke $a$ und der elektrischen Leitfähigkeit $o$) einer Wechselspannung mit geringer Frequenz ausgesetzt, so fließt der resultierende Strom im gesamten Drahtquerschnitt (mit homogener Stromdichte).\\
+\\
+Eindringtiefe an der Oberfläche des Leiters ($\lambda << a $)
+\begin{align}
+\lambda = \sqrt{\frac{2}{\omega  \mu_0 o}} \\
+(\omega >> ( a^2 \mu_0 o))
+\end{align} 
+Beispiel für die Eindringtiefe\\
+\\
+Ebene elektromagnetische Welle trifft von Vakuum  ($z<0$) auf einen Metallkörper mit elektrischer Leitfähigkeit $o$. \\
+\\
+Elektrisches Feld der Welle
+\begin{align}
+E= \vert E_0 \vert dy \; Re( e^{i(kz-\omega t)})
+\end{align}
+\begin{align}
+dE=-\dot{B}= i \omega B = i \omega \mu_0 * H \rightsquigarrow *dE= i \omega \mu_0 H
+\end{align}
+\begin{align}
+dH= j+ \dot{D} \cong j = o * E \\
+(z>0)
+\end{align}
+\begin{align}
+\Rightarrow *d*dE= i \omega \mu_0 o E
+\end{align}
+\begin{align}
+d*E=\frac{dD}{\epsilon_0}= \frac{\rho}{\epsilon_0}=0
+\end{align}
+\begin{align}
+\Rightarrow - \triangle E = 2 i \lambda^{-2} E
+\end{align}
+Eine Lösung von folgender Form wird gesucht:
+\begin{align}
+E \backsim e^{i(kz-\omega t)} \\
+(z>0)
+\end{align}
+\begin{align}
+\pm k = \sqrt{2i} \lambda^{-1} = \frac{1+i}{\lambda}
+\end{align}
+Lösung:
+\begin{align}
+E= \vert E_1 \vert dy e^{-\frac{z}{\lambda}}  \; Re( e^{i(\frac{z}{\lambda}- \omega t)})
+\end{align}
+\paragraph{Fourier-Transformation} $\, $ \\
+Periodische Funktion
+\begin{align}
+f: \mathbb{R} \longrightarrow \mathbb{C} \\
+f(x+2 \pi) = f(x)
+\end{align}
+Hermitesches Skalarprodukt
+\begin{align}
+\langle f,g \rangle = \frac{1}{2 \pi} \int_{-\pi}^{+ \pi} \bar{f}(x) g(x) dx
+\end{align}
+Orthonormalsystem
+\begin{align}
+\frac{1}{2 \pi} \int_{- \pi}^{+ \pi} e^{i(n-m)x} dx = \delta_{m,n}
+\end{align}
+Jede stetige periodische Funktion lässt sich als Fourier-Reihe $ f(x) $ mit Fourier-Koeffizienten $f_n$
+\begin{align}
+f(x)= \sum_{n \in \mathbb{Z}} f_n e^{inx}
+\end{align}
+\begin{align}
+f_n = \frac{1}{2 \pi} \int_{- \pi}^{+ \pi} f(x) e^{-inx} dx
+\end{align}
+Definition\\
+\\
+Sei $ f \in L^1(\mathbb{R})$. d.h. $ \int_{\mathbb{R}} \vert
+f(x) \vert dx < \infty $.\\
+Dann heißt $ \tilde{f} $ die Fourier-Transformierte von $f$
+\begin{align}
+\tilde{f}\equiv  \mathcal{F}f: \mathbb{R} \longrightarrow \mathbb{C}
+\end{align}
+\begin{align}
+k \longmapsto \frac{1}{\sqrt{2 \pi}} \int_{\mathbb{R}} f(x) e^{-ikx} dx
+\end{align}
+\\
+$ \tilde{f} $ ist beschränkt und stetig.\\
+\\
+Satz(PQ-Regel)
+\\
+(i) Sei $ f \in C^m(\mathbb{R}) $ und $ P^nf \in L^1 (\mathbb{R})$. Dann gilt $\tilde{P}^nf = Q^n \tilde{f}$ für $ m \geq n $ und $ \vert \tilde{f}(k) \vert \geq \frac{const}{1+ \vert k \vert ^m} $ \\
+\\
+(ii) Sei $ Q^nf \in L^1(\mathbb{R})$ für $ m \geq n $. Dann gilt $ \tilde{f} \in C^m(\mathbb{R}) $ und $ \tilde{Q}^nf = (-1)^n P^n \tilde{f} $ \\
+\\
+Eigenschaften
+\begin{align}
+(i) f \in \xi (\mathbb{R}) \Rightarrow P^nf, Q^nf \in \xi (\mathbb{R}) \text{für alle} \\ n=0,1,2,3,...(\infty)
+\end{align}
+\begin{align}
+(ii) f,g \in \xi (\mathbb{R}) \Rightarrow f * g \in \xi (\mathbb{R})
+\end{align}
+Faltungsintegral:
+\begin{align}
+(f*g)(x)\equiv \int_{\mathbb{R}} f(y) g(x-y) dy
+\end{align}
+Satz\\
+\\
+Die Fourier-Transformation $ \mathcal{F}: \xi(\mathbb{R}) \longrightarrow \xi (\mathbb{R}) $ ist eine Bijektion. Es gilt folgende Umkehrformel:
+\begin{align}
+f(x)=\frac{1}{\sqrt{2 \pi}} \int_{\mathbb{R}} \tilde{f}(k) e^{ikx} dk
+\end{align}
+Korollar
+\begin{align}
+(\mathcal{F}^2f)(x)=f(-x)
+\end{align}
+\begin{align}
+\mathcal{F}^4=Id
+\end{align}
+Faltungssatz\\
+\\
+Für $f,g \in \xi (\mathbb{R}) $ gilt:
+\begin{align}
+(i) \tilde{f*g} = \sqrt{2 \pi} \tilde{f} \tilde{g}
+\end{align}
+\begin{align}
+(ii) \tilde{f} * \tilde{g}= \sqrt{2 \pi} \tilde{fg}
+\end{align}
+\paragraph{Lösung der eindimensionalen Wellengleichungen} $\,$\\
+\begin{align}
+(\frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \frac{\partial^2}{\partial x^2}) f(x,t)=0
+\end{align}
+Anfangsbedingungen:
+\begin{align}
+f(x,0)=u(x)
+\end{align}
+\begin{align}
+\dot{f}(x,0)=v(x)
+\end{align}
+Übergang zur fouriertransformierten Gleichung und Nutzung der PQ-Regel liefert:
+\begin{align}
+\tilde{f}(k,t)=\tilde{u}(k)cos(kct) + \tilde{v}(k) \frac{sin(kct)}{kc}
+\end{align}
+Lösung der Ausgangsgleichung:
+\begin{align}
+f(x,t)= \frac{1}{2}(u(x+ct)+u(x-ct))+ \frac{1}{c} \int_{x-ct}^{x+ct} v(x')dx'
+\end{align}
+\paragraph{Lösung der eindimensionalen inhomogenen Wellenfunktion} $\,$ \\
+\begin{align}
+(\frac{1}{c^2} \frac{\partial^2}{\partial t^2} - \frac{\partial^2}{\partial x^2}) f(x,t)=g(x,t)
+\end{align}
+Anfangsbedingungen:
+\begin{align}
+lim_{t\longrightarrow - \infty} f(x,t)=lim_{t\longrightarrow - \infty} \cdot{f}(x,t)=0
+\end{align}
+Lösung:
+\begin{align}
+f(x,t)= \frac{c}{2} \int_{-\infty}^t(\int_{x-c(t-t')}^{x+c(t-t')} g(x',t'))dx'
+\end{align}
+Raum-Zeit-Fouriertransformation
+\begin{align}
+\tilde{f}(k,w)\equiv \frac{1}{2 \pi} \iint_{\mathbb{R^2}} f(x,t) e^{-i(kx-\omega t)} dxdt
+\end{align}
+\paragraph{Lösung der dreidimensionalen Wellengleichungen} $\,$\\
+Homogene Wellengleichung:
+\begin{align}
+(\frac{1}{c^2} \frac{\partial^2}{\partial t^2}- \triangle)f=0
+\end{align}
+Anfangsbedingung:
+\begin{align}
+f(p,t=0)=u(p)
+\end{align}
+\begin{align}
+\dot{f}(p,t=0)=v(p)
+\end{align}
+Wie oben zunächst die Fouriertransformation
+\begin{align}
+(\frac{1}{c^2} \frac{\partial^2}{\partial t^2}+ \vert k \vert^2)\tilde{f}(k,t)=0 \\
+\vert k \vert^2=k_x^2+k_y^2+k_z^2
+\end{align}
+Lösung:
+\begin{align}
+\tilde{f}(k,t)= \tilde{u} (k) cos( \vert k \vert ct)+ \tilde{v}k \frac{sin(\vert k \vert ct)}{\vert k \vert c}
+\end{align}
+Lösung der Ausgangsgleichung:
+\begin{align}
+f(p,t)=\frac{t}{4 \pi} \int_{S_{ct}(p)} v \tau_p
+\end{align}
+\paragraph{Lösung der dreidimensionalen inhomogenen Wellengleichung} $\,$ \\
+\begin{align}
+( \frac{1}{c^2} \frac{\partial^2}{\partial t^2}-\triangle) f(\cdot, t)= g(\cdot, t)
+\end{align}
+Spezielle Lösung (mit $f\equiv 0$ für $g \equiv 0$):
+\begin{align}
+f(p,t)=\int_{E_3} \frac{g(\cdot, t-\frac{1}{c}r_p (\cdot))}{4 \pi r_p(\cdot)} dvol_3
+\end{align}
+Bemerkung: Dieser dreidimensionaler Ausdruck ist im gewissen Sinne "einfacher" als der entsprechende eindimensionaler Ausdruck, denn der Träger des dreidimensionalen Integralkerns liegt im Rand des Lichtkegels (nicht im Lichtkegel insgesamt)  
+\paragraph{Lagrange-Mechanik} $\,$ \\
+Übergang zu krummlinigen Koordinaten zum Zwecke der Berücksichtigung von Zwangsbedingungen. Die Lagrange-Funktion als zentrale Größe lässt eine wesentlich größere Auswahl bezüglich der Koordinatenfreiheit. Erlaubt einen Zusammenhang zwischen Symmetrien und Erhaltungssätzen. Außerdem ist die Lagrange-Funktion die fundamentale Größe in der relativistisch kovarianten Formulierung der Quantenfeldtheorie.
+\paragraph{Variationsrechnung} $\,$\\
+\\
+Wirkungsfunktional
+\begin{align}
+S[\gamma] = \int_{t_0}^{t_1} L(\gamma (t) , \dot{\gamma} (t), t) dt
+\end{align}
+Satz:\\
+\\
+Das Funktional $S[\gamma]$ ist differenzierbar und hat folgende Variation
+\begin{align}
+F[\gamma, h] = \int_{t_0}^{t_1} \sum_{i=1}^n (\frac{\partial L}{\partial x_i}-\frac{d}{dt} \frac{\partial L}{\partial \dot{x}_i})h_i dt + (\sum_{i=1}^n \frac{\partial L}{\partial \dot{x}_i} h_i) \mid_{t_0}^{t_1}
+\end{align}
+Extremalität\\
+\\
+Ein differenzierbares Funktional $\varphi$ heißt extremal in $\gamma$ , wenn $ F[\gamma,h] $ für alle $h$ gleich Null ist. \\
+\\
+Satz: \\
+\\
+Auf jeder eingeschränkten Menge von differenzierbaren Kurven, die durch zwei fest gewählte Punkte $\gamma (t_0)=a_0 \in A $ und $ \gamma (t_1)= a_1 \in A$ laufen, ist das Funktional $ S[\gamma]=\int_{t_0}^{t_1} L(\gamma, \dot{\gamma}, t)dt $ genau dann extremal in $\gamma$, wenn längs $\gamma$ gilt
+\begin{align}
+\frac{\partial L}{\partial x_i}- \frac{d}{dt} \frac{\partial L}{\partial \dot{x}_i} = 0\\
+(i=1,...,m)
+\end{align}
+Fundamentallemma der Variationsrechnung\\
+\\
+Verschwindet für eine Funktion $ f \in C^0(I,V^*) $ das Integral $ \int_{t_0}^{t_1} \sum_i f_i(t) h_i(t) dt $ für alle $h \in C^{\infty}(I,V)$, so gilt $ f \equiv 0$  (Nullfunktion)
+\paragraph{Lagrange-Systeme} $\,$ \\
+\\
+Hamiltonsches Prinzip der kleinsten (extremalen) Wirkung:\\
+\\
+Lösungen des mechanischen Systems zu den Randwerten $\gamma_i (t_0)=a_0^{(i)} $ und $ \gamma_i (t_1)=a_1^{(i)} (i=1,...N) $ sind Extrema des Funktionals $ S=\int_{t_0}^{t_1} Ldt $ (mit demselben Randwerten für die zulässigen Kurven), wobei $L=T-U$ die Differenz zwischen kinetischer und potentieller Energie ist.\\
+\\
+Lagrange-Systeme\\
+\\
+Nicht für alle mechanischen Systeme lässt sich eine Lagrange-Funktionen finden. Diejenigen, für welche sich dennoch eine finden lässt, heißen Lagrange-Systeme.\\
+\\
+Satz:\\
+\\
+Die Euler-Ableitung zweier Lagrange-Funktionen $L_1, L_2: U \times \mathbb{R}^f \times \mathbb{R} \longrightarrow \mathbb{R} $ mit einfach zusammenhängendem Definitionsgebiet $ U \subset \mathbb{R}^f $ sind genau dann identisch, wenn die Differenz $ L_1-L_2 $ die totale Zeitableitung einer Funktion $ M: U \times \mathbb{R} \longrightarrow \mathbb{R}$ ist.\\
+\\
+Eichtransformation \\
+\\
+Hier am Beispiel eines Teilchen im elektromagnetischen Feld 
+\begin{align}
+A \longrightarrow A + d \xi \\
+\phi \longmapsto \phi -\frac{\partial \chi}{\partial t}
+\end{align}
+\begin{align}
+L \longmapsto L+ e (\frac{\partial \chi}{\partial t} + \sum \frac{\partial \chi}{\partial x_j} \dot{\gamma}_j)=L+e \frac{\partial \chi}{\partial t} 
+\end{align}
+Die Lagrangefunktion ändert sich hier um eine totale Zeitableitung, weshalb die die zugehörige Euler-Lagrange-Gleichungen unter Eichtransformation invariant sind.
+\paragraph{Invarianz unter Punkttransformation} $\,$ \\
+Die koordinatenfreie Bedeutung der Lagrange-Funktion $S$ überträgt sich auf das Wirkungsfunktional $S= \int L dt$. Die Euler-Lagrange-Gleichungen folgen aus $S=\int L dt $ per Variation unter Nebenbedingungen. Da auch die letzte Operation koordinatenfrei erklärt ist, haben die Euler-Lagrange-Gleichungen immer dieselbe Form, unabhängig von der Wahl der Koordinaten.\\
+\\
+Punkttransformation\\
+\\
+Eine Abbildung $ U \times \mathbb{R} \longrightarrow U \times \mathbb{R}$ der Form $ (q,t) \longmapsto ( \phi (q,t),t)$ heißt Punkttransformation. Die Euler-Lagrange-Gleichungen behalten unter Punkttransformation ihre Form.\\
+\\
+Beispiel: Teilchen im Zentralkraftfeld
+\begin{align}
+L=\frac{1}{2} m (\dot{r}^2+r^2\dot{\phi}^2)-U(r)
+\end{align}
+Euler-Lagrange-Gleichungen
+\begin{align}
+\frac{d}{dt} \frac{\partial L}{\partial \dot{r}}-\frac{\partial L}{\partial r}=0=m \ddot{r}-mr\dot{\phi}^2+U'(r)
+\end{align}
+\begin{align}
+\frac{d}{dt} \frac{\partial L}{\partial \dot{\phi}}-\frac{\partial L}{\partial
+	\phi} =0=\frac{d}{dt}(mr^2 \dot{\phi})
+\end{align}
+Die zweite Gleichung besagt, dass der Drehimpuls $l=mr^2\dot{\phi} $ erhalten ist. Wenn wir $ \dot{\phi}=\frac{l}{mr^2}$ in die erste Gleichung einsetzen, dann entsteht
+\begin{align}
+m \ddot{r}+V'(r) =0
+\end{align}
+\begin{align}
+V(r)=U(r)+ \frac{l^2}{2mr^2}
+\end{align}
+Dies ist die Bewegungsgleichung für die Radialkoordinate $r$
+\paragraph{Zwangsbedingungen} $\,$ \\
+\\
+Eine zeitunabhängige Zwangsbedingung heißt holonom, wenn sie sich als Gleichung mit einer Funktion $ f:A\longrightarrow \mathbb{R} $ ausdrücken lässt:
+\begin{align}
+f=0
+\end{align}
+Es wird verlangt, dass $f$ differenzierbar ist und das Differential $(df)_a $ für kein $ a \in f^{-1}(0) $ verschwindet.\\
+\\
+Beispiel: Ebenes Pendel\\
+\\
+Holonome Zwangsbedingung:
+\begin{align}
+f=x_1^2+x_2^2-l^2=0
+\end{align}
+Das folgende Differential ist überall auf der Kreislinie $f=0$ ungleich null:
+\begin{align}
+df=2(x_1dx_1+x_2dx_2)
+\end{align}
+Rangbedingung
+\begin{align}
+f_1=...=f_r=0
+\end{align}
+Die Funktionen $f_k: a \longrightarrow \mathbb{R} $ seien genügend oft stetig differenzierbar.
+\begin{align}
+{(df_1)_a,...,(df_r)_r}
+\end{align}
+Die Zwangsbedingungen sind linear unabhängig für alle Stellen $a \in A$ im Lösungsraum von (238).\\
+\\
+Zwangskräfte \\
+\\
+Kräfte, welche dafür sorgen, dass die Bewegungsgleichung des mechanischen Systems auf der durch (238) festgelegten Teilmenge $ A \subset \mathbb{R}^n $ verläuft. Sie "stehen senkrecht" auf der durch (238) ausgezeichneten Teilmenge des $ \mathbb{R}^n$, auf der Bewegung verläuft. Mit ausgezeichneter Zwangskraft $Z$ haben die Newtonschen Bewegungsgleichungen folgende Form:
+\begin{align}
+m_k \ddot{x}_k=F_k+Z_k \\
+(k=1,...,n)
+\end{align}
+Anleitung zum Übergang zu $f=n-r$ Bewegungsgleichungen für $f$ verallgemeinerte Koordinaten, wo die Zwangskräfte nicht mehr in Erscheinung treten:\\
+\\
+Gegeben sei ein System mit Lagrange-Funktion $L: A \times V \times \mathbb{R} \longrightarrow \mathbb{R}$.
+$M$ als die Lösungsmenge der holonomen Zwangsbedingungen:
+\begin{align}
+M := {a \in A \vert f:k(a)=0; \ (k=1,...,r)}
+\end{align}
+(A)\\
+\\
+Parametrisiere $M$ durch die differenzierbare Abbildung $ \phi : U \longrightarrow M $ mit $ U\subset \mathbb{R}^f, f=n-r $ d.h. $(f_k\circ \phi)(q)=0 $ für alle $ q \in U$ und $k=1,...,r$.\\
+\\
+(B)\\
+\\
+Eine Kurve $ \gamma : I \longrightarrow U $ wird durch $  \phi $ in eine Kurve $ \phi \circ \gamma $ in $M$ abgebildet. Definiere die Lagrange-Funktion des Systems mit Zwangsbedingung , $ \bar{L} : U \times  \mathbb{R}^f \times \mathbb{R} \longrightarrow \mathbb{R}$, durch
+\begin{align}
+\bar{L}(\gamma(t), \dot{\gamma}(t)),t := L((\phi \circ \gamma)(t), \frac{d}{dt}( \phi \circ \gamma)(t),t)
+\end{align}
+(3)\\
+\\
+Wähle einen Satz von Koordinatenfunktionen $q_1,...,q_f : U \longrightarrow \mathbb{R}$ und stelle die Lagrange-Gleichung zu $\bar{L} $ auf:
+\begin{align}
+\frac{d}{dt}(\frac{\partial \bar{L}}{\partial \dot{q}_k}=\frac{\partial \bar{L}}{\partial q_k}) \\
+(k=1,...,f)
+\end{align}
+\paragraph{Begründung obiger Gebrauchsanweisung} $\,$ \\
+Autonomes System mit Lagrange-Funktion
+\begin{align}
+L= \frac{m}{2} \vert \dot{x} \vert^2-U(x)
+\end{align}
+\begin{align}
+\vert x \vert^2= \sum_{k=1}^n \dot{x}_k^2
+\end{align}
+Newtonsche Bewegungsgleichung für eine Bahnkurve $ t \longmapsto \Gamma (t)$
+\begin{align}
+\langle m \ddot{\Gamma} (t), \cdot \rangle + (dU)_{\Gamma (t)} = Z_{\Gamma (t)}
+\end{align}
+Tangentialraum
+\begin{align}
+T_aM := { \xi \in \mathbb{R}^n \vert (df_k)_a (\xi) =0; k=1,...,r}
+\end{align}
+D'Alembertsches Prinzip:\\
+\\
+Zwangskräfte leisten keine virtuelle Arbeit
+\begin{align}
+Z_a (\xi)=0 \\
+(\xi \in T_aM)
+\end{align}
+Im Visualisierungsbild für Linearformen kann angenommen werden, dass die (Hyper-)Ebenenschar der Zwangskraft $Z$ in jedem Punkt $ a \in M$ tangential zu $M$ liegt.\\
+\\
+Umschreiben von (250) zu:
+\begin{align}
+\langle m \ddot{\Gamma}(t), \xi \rangle + (dU)_{\Gamma (t)} (\xi)=0 \\
+\xi \in T_{\Gamma (t)}M
+\end{align}
+Tangentialraum
+\begin{align}
+T \varphi : U \times \mathbb{R}^f \longrightarrow TM
+\end{align}
+\begin{align}
+(q, \dot{q}) \longmapsto (\varphi (q), D_q \varphi(\dot{q}))
+\end{align}
+Nach (B) folgt:
+\begin{align}
+\bar{L} := L \circ T \varphi
+\end{align}
+Satz:\\
+\\
+Sei $\gamma : I \longrightarrow U $ eine differenzierbare Kurve und $ \Gamma = \varphi  \circ \gamma : I \longrightarrow M $ ihr Bild unter $ \varphi $. Für $ I=[t_0,t_1] $ schreiben wir $ (\gamma (t_j))=q^{(j)} \in U $ und $ \Gamma (t_j)=a^{(j)} \in M (j=0,1) $. Dann sind folgende Aussagen zueinander äquivalent:\\
+\\
+(i) Das Wirkungsfunktional $\bar{S} [\gamma]:= \int_{t_0}^{t_1} \bar{L}(\gamma(t), \dot{\gamma}(t))dt $ ist extremal in $ \gamma$ auf der durch $ \gamma (t_0)=q^{(0)} $ und $ \gamma (t_1)=q^{(1)} $ eingeschränkte Kurvenmenge.\\
+\\
+(ii) Das D'Alembertsche Prinzip ist erfüllt.\\
+\\
+Es wird also die Äquivalenz des D'Alembertschen Prinzips zum Hamiltonschen Prinzip der kleinsten Wirkung (für Bewegungen auf $TM$) behauptet.
+\paragraph{Parametrische Resonanz} $\,\  $ \\
+Wenn die Parameter eines Systems periodisch von der Zeit abhängen, kann eine Gleichgewichtslage instabil sein, selbst wenn sie für jeden festen Wert der Parameter stabil ist.\\
+\\
+Eindimensionaler,harmonischer Oszillator mit periodisch variierender Frequenz
+\begin{align}
+\ddot{q}+\omega^2(t)q=0 \\
+\omega(t+T)=\omega (t)
+\end{align}
+Das dazu äquivalente Hamiltonsche System (mit Masse $m=1$)
+\begin{align}
+\dot{q}=p\\
+\dot{p}=- \omega^2(t)q \\
+\omega(t+T)=\omega (t)
+\end{align}
+Die obigen Gleichungen veranschaulichen ein Modell für ein Pendel mit periodisch variierender Länge $ l(t) $ und zugehöriger Frequenz $ \omega (t)= \sqrt{\frac{g}{l(t)}} $ \\
+\\
+Sei $\xi_t \equiv \phi_{t,0} $ der Fluss des Hamiltonschen Systems.\\
+\\
+Eigenschaften:\\
+\\
+-Das System ist nicht autonom $\Rightarrow \phi_t \circ \phi_s \neq \phi_{t+s} $ (keine Gruppeneigenschaft)\\
+\\
+-$\phi_T \circ \phi_{t}= \phi_{T+t} $ \\
+\\
+-$\phi_{nT}= (\phi_T)^n $\\
+\\
+-$ \phi_t $ ist linear: $ \phi_t^*(q,p)=(a_tq+b_tp, c:tq+d_tp) $ \\
+\\
+-$ J_t:= \begin{pmatrix} a_t & b_t \\ c_t & d_t \end{pmatrix} $\\
+\\
+Liouvillescher Satz: \\\
+Der Fluss $ \phi_t$ ist flächentreu, d.h.
+\begin{align}
+\int_{\phi_t (A)} dp \wedge dq = \int_A dp \wedge dq
+\end{align}
+Stabilität \\
+\\
+Eine lineare Transformation $J:V \longrightarrow V$ eines normierten Vektorraumes $V$ heißt stabil, wenn zu jedem $\epsilon >0 $ ein $\delta>0$ existiert, so dass für alle $n \in \mathbb{N} $ und alle $v \in \mathbb{V}$ mit Länge $ \vert v \vert < \delta $ gilt:
+\begin{align}
+\vert J^nv\vert < \epsilon
+\end{align}
+Satz:\\
+\\
+Sei $J$ eine lineare, flächentreue Abbildung $ \mathbb{R}^2 \longrightarrow \mathbb{R}^2 $. Dann ist die Abbildung stabil, falls folgendes gilt:
+\begin{align}
+\vert Tr(J)\vert <2
+\end{align}
+Im Umkehrschluss ist sie instabil, wenn gilt:
+\begin{align}
+\vert Tr(J)\vert >2
+\end{align}
+Eigenwerte:
+\begin{align}
+\lambda_{1,2} = \frac{1}{2}(Tr(J) \pm \sqrt{(Tr(J))^2-4})
+\end{align}
+Schwache Störung\\
+\\
+Grenzfall einer schwachen Störung:
+\begin{align}
+\omega(t)=(1,\epsilon f(t)) \omega
+\end{align}
+\begin{align}
+f(t)=f(t+T)\\
+\epsilon \; \text{klein}
+\end{align}
+\begin{align}
+J_T=\begin{pmatrix}
+	cos(\omega T) & (\frac{1}{\omega} sin(\omega T) \\ -\omega sin(\omega T) & cos(\omega T) 
+\end{pmatrix}
+\end{align}
+\paragraph{Hamiltonsche Formulierung der Mechanik} $\,$\\
+Die Bewegungsgleichungen für ein mechanisches System mit $f$ Freiheitsgraden schreiben wir als ein System von $2f$ Differentialgleichungen erster Ordnung in der Zeit. Hamiltonsche Systeme sind unter kanonischen Transformationen forminvariant. Der Übergang von Lagrange-Funktionen zu Hamilton-Funktionen werden mittels Legendre-Transformationen vollzogen.
+\paragraph{Legendre-Transformationen} $\,$ \\
+Beobachtung: \\
+Lagrange- und Hamiltonfunktionen hängen auf folgende Art und Weise zusammen:
+\begin{align}
+H=\sum_i p_i(\dot{r}_i)-L
+\end{align}
+Definition\\
+\\
+Gegeben sei eine zweimal stetig differenzierbare Funktion $ f: \mathbb{R}\supset I \longrightarrow \mathbb{R} $ , sowie $g$, definiert durch $g(x):= f'(x)$. 
+\begin{align}
+(\mathcal{L}f)(y):=yh(y)-f(h(y))
+\end{align}
+Satz:\\
+\\
+Die Legendre-Transformation hat die folgenden Eigenschaften:\\
+\\
+1. $(\mathcal{L}f)'=h$\\
+\\
+2. $(\mathcal{L}f)''=(f'' \circ h)^{-1} $\\
+\\
+3. Mit $f$ ist auch $ \mathcal{L}f$ konvex.\\
+\\
+4. Die Legendre-Transformation in involutiv, d.h. $\mathcal{L}^2f= \mathcal{L}(\mathcal{L}f)=f $ für $ f \in C^2(I)$, $f$ konvex.\\
+\\
+Bemerkung:\\
+\\
+Die Legendre-Transformation mit folgender Abbildung auf beliebig stetige konvexe Funktionen $f: I \longrightarrow \mathbb{R}$ ausdehnen:
+\begin{align}
+(\mathcal{L}f)(y):= sup_{x \in I}(yx-f(x))
+\end{align}
+Verallgemeinerung auf Funktionen mehrerer Veränderlicher\\
+\\
+Sie $V\equiv \mathbb{R}^n $ und $ V^* := L(V,\mathbb{R}) $ der Raum der linearen Abbildungen $ V \longrightarrow \mathbb{R}$. Sei weiter $ f: V \longrightarrow \mathbb{R}, x \longmapsto f(x) $ von der Klasse $C^2$ und konvex, d.h. die Hessesche Form $ D_x^2f$ ist positiv definit für alle $ x \in V $. Definiere $ g: V \longrightarrow V^* $ durch $ g(x) = D_xf $und die Umkehrabbildung $ h: V^* \longrightarrow V $ durch $ h \circ g= Id $. Dann ist die Legendre-Transformierte $ \mathcal{L}f: V^* \longrightarrow  \mathbb{R}$ erklärt durch
+\begin{align}
+( \mathcal{L} f)(y):= y(h(y))-f(h(y))
+\end{align}  
+Satz: \\
+\\
+Die Voraussetzung seien wie in der obigen Definition. Dann gelten folgende Gleichungen
+\begin{align}
+D_y(\mathcal{L}f)=h(y)
+\end{align}
+\begin{align}
+D_y^2( \mathcal{L}f)=(D_{h(y)}^2f)^{-1}
+\end{align}
+\begin{align}
+\mathcal{L}^2f=f
+\end{align}
+\paragraph{Die kanonischen Gleichungen} $\,$\\
+Satz:\\
+\\
+Die Euler-Lagrange-Gleichungen $ \dot{p}_k= \frac{\partial L}{\partial q_k} $ mit dem kanonischen Impuls $ p_k= \frac{\partial
+L}{\partial \dot{q_k}} (k=1,...,f) $ sind äquivalent zu dem folgenden System von Gleichungen:
+\begin{align}
+\dot{q_k}= \frac{\partial H}{\partial p_k}
+\end{align}
+\begin{align}
+\dot{p_k}=-\frac{\partial H}{\partial q_k}\ 
+\\
+(k=1,...,f)
+\end{align}
+Hier ist $H$ die Legendre-Transformierte von $L$ als Funktion der Geschwindigkeit $ \dot{q}$.\\
+\\
+Definition:\\
+\\
+Die Gleichungen (286) und (287) heißen Hamiltonsche oder Kanonische Gleichungen; die Funktion $H$ heißt Hamilton-Funktion.
+\paragraph{Die Symplektische Gruppe $Sp(2f)$} $\,$\\
+Symplektischer Vektorraum:\\
+\\
+Sei $W$ ein reeller Vektorraum gerader Dimension, $dim(W)=3f$, und $\omega: W \times W \longrightarrow \mathbb{R}, (x,y) \longmapsto \omega (x,y)=-\omega (y,x) $ eine schiefsymmetrische Biliniearform. Ist $\omega
+$ nicht entartet, so heißt das Paar $ (W,\omega)$ ein symplektischer Vektorraum.\\
+\\
+Symplektische Gruppe: \\
+\\
+Sei $(W,\omega)$ ein sympletkischer Vektorraum der Dimension $2f$. Die Gruppe aller linearen Abbildung $S:W \longrightarrow W$, die $\omega$ invariant lassen, also für alle $x,y \in W$ die Relation
+\begin{align}
+\omega(Sx,Sy)=\omega(x,y)
+\end{align}
+erfüllt, heißt die symplektische Gruppe in $2f$ Dimensionen und wird mit $ Sp(W,\omega) \equiv Sp82f, \mathbb{R}) \equiv Sp(2f)$ bezeichnet. Die Elemente von $Sp(2f) $ heißen symplektische Abbildungen.\\
+\\
+Matrixdarstellung
+\begin{align}
+Se_i= \sum_j e_j S_{ji}
+\end{align}
+\begin{align}
+\omega_{ij}=\sum_{kl} S_{ki}\omega_{kl} S_{lj}
+\end{align}
+\begin{align}
+\tilde{S}^t \tilde{\omega} \tilde{S}= \tilde{\omega}
+\end{align}
+Volumenerhaltung
+\begin{align}
+Det(S)=1
+\end{align}
+Da $Det(S)$ als Volumenänderung angenommen werden kann, sind alle symplektische Abbildungen volumenerhaltend.\\
+\\
+Reziprozität\\
+\\
+Das charakteristische Polynom $\chi(\lambda) = Det(\lambda-S) $ einer symplektischen Abbildung $S \in Sp(2f) $ hat folgende Eigenschaft
+\begin{align}
+\chi (\lambda) = \lambda^{2f} \chi (\lambda^{-1})
+\end{align}
+Quadrupel\\
+\\
+Wegen $ \chi(0) = Det(-S) = Det(S)=1 $ folgt aus $ \chi(\lambda)=\lambda^{2f} \chi (\lambda^{-1})$, dass mit $\lambda $ auch $ \lambda^{-1}$ Nullstellen von $\chi$ und somit Eigenwerte von $S$ ist.
+Eigenwerte von symplektischen Abbildungen treten i.A. als Quadrupel auf:
+\begin{align}
+(\lambda, \lambda^{-1}, \bar{\lambda}, \bar{\lambda}^{-1})
+\end{align}
+\paragraph{Hamiltonsche Systeme} $\,$\\
+Definition: \\
+\\
+Sei $M$ eine differenzierbare Mannigfaltigkeit der Dimension $2f$ und $ \omega $ eine 2-Form auf $M$. Ist $\omega$ geschlossen und nicht entartet, so heißt $\omega$ eine symplektische Struktur auf $M$, und das Paar $(M,\omega)$ heißt eine symplektische Mannigfaltigkeit.\\
+\\
+Vorbereitung
+\begin{align}
+\omega(\cdot,X_H)=\sum_{k=1}^f(\frac{\partial H}{\partial p_k}dp_k + \frac{\partial H}{\partial q_k} dq_k)=dH
+\end{align}
+Die Beziehung zwischen $H$ und $X_H$ lässt sich auf folgende Art und Weise koordinatenfrei formulieren
+\begin{align}
+\omega (\cdot, X_H)=dH
+\end{align}
+Definition:\\
+\\
+Ein Hamiltonsches System ist ein Tripel $(M,\omega,H)$. Hierbei ist $ (M,\omega)$ eine symplektische Mannigfaltigkeit - nämlich der mit einer geschlossenen nicht entarteten 2-Form $\omega$ versehene Phasenraum $M$ - und $H: M \longrightarrow \mathbb{R} $ eine differenzierbare Funktion, die Hamilton-Funktion. Die Bewegungsgleichung eines solchen Systems sind die Hamiltonschen Gleichungen:
+\begin{align}
+\dot{x}= X_H(x)
+\end{align}
+\begin{align}
+X_H=\sum_{k=1}^f(\frac{\partial H}{\partial p_k} \frac{\partial}{\partial q_k}- \frac{\partial H}{\partial q_k} \frac{\partial}{\partial p_k})
+\end{align}
+\paragraph{Der klassische Spin} $\,$\\
+Der Drehimpuls als schiefsymmetrische Abbildung des euklidischen Vektorraumes $ V \simeq \mathbb{R}^3$:
+\begin{align}
+l=-l^T : V \longrightarrow V 
+\end{align}
+Der Spin $o$ muss die Eigenschaft eines Generators besitzen:
+\begin{align}
+\sigma^2=-\prod
+\end{align}
+Bewegungsgleichung des Spins im Magnetfeld:
+\begin{align}
+\dot{\sigma}= \mu [\sigma,B]
+\end{align}
+Larmor-Präzession \\
+\\
+Bewegungsgleichungen in Komponenten:
+\begin{align}
+\dot{\sigma}_1= \omega_L \sigma_2
+\end{align}
+\begin{align}
+\dot{\sigma}_2= -\omega_L \sigma_1
+\end{align}
+\begin{align}
+\dot{\sigma}_3=0
+\end{align}
+\begin{align}
+\omega_L \equiv \mu \vert B \vert
+\end{align}
+Im Folgenden soll der klassische Spin Magnetfeld als Hamiltonsches System beschrieben werden.\\
+\\
+Phasenraum:
+\begin{align}
+M := {0 \in so(3)\vert \sigma^2=-\prod}
+\end{align}
+\begin{align}
+so(3) = {X \in End(\mathbb{R}^3 \vert X=-X^T)}
+\end{align}
+Tangentialraum zu einem Punkt $ \sigma \in M$:
+\begin{align}
+T_{\sigma}M={X \in so(3) \vert Tr(\sigma X)=0}
+\end{align}
+Nun hat man folgende schiefsymmetrische Bilinearform:
+\begin{align}
+\omega_{\sigma} : T_{\sigma} M \times T_{\sigma} M \longrightarrow \mathbb{R}
+\end{align}
+\begin{align}
+(X,Y) \longrightarrow Tr(\sigma [X,Y])
+\end{align}
+Hamiltonsches System:
+\begin{align}
+H: M \longrightarrow \mathbb{R} \\
+\sigma \longmapsto \mu Tr(\sigma B)
+\end{align}
+Bewegungsgleichung:
+\begin{align}
+(dH):\sigma(X) =\frac{d}{dt} H(\gamma(t)) \vert_{t=0} = \mu \frac{d}{dt} Tr (e^{tY} \sigma e^{tY}B)\vert_{t=0}=\mu Tr(XB)
+\end{align}
+\begin{align}
+\Rightarrow \mu Tr([\sigma,B][\sigma,X])=Tr(\dot{\sigma}[\sigma,X])
+\end{align}
+\begin{align}
+\Rightarrow \dot{\sigma}= \mu [\sigma,B]
+\end{align}
+\paragraph{Satz von Darboux} $\,$ \\
+Sei $(M,\omega) $ eine symplektische Mannigfaltigkeit der Dimension $2f$. Dann existiert zu jedem Punkt $x \in M$ eine offene Umgebung $ N_x \subset M$ und Funktionen \\$ q_1,...,q_f, p_1,...,p_f: N_x \longrightarrow \mathbb{R}$, sodass die symplektische Struktur $\omega$ auf $N$ die kanonische Form $ \omega= \sum_{k=1}^f dp_k \wedge dq_k $ annimmt.
+\paragraph{Kanonische Transformation} $\,$ \\
+Normalgestalt:
+\begin{align}
+\omega= \sum_{k=1}^f fp_k \wedge dq_k
+\end{align}
+Koordinatenwechsel\\
+\\
+Ist nun ein Diffeomorphismus $ \psi : M \longrightarrow M $ gegeben, so können wir durch die Verkettung mit $ \psi $ neue Koordinatenfunktionen $Q_1,...,Q_f;P_1,...,P_f$ bilden:
+\begin{align}
+Q_k=q_k \cdot \psi
+\end{align} 
+\begin{align}
+P_k = p_k \cdot \psi \; (k=1,...,f)
+\end{align}
+Kanonische Gleichungen in neue Gestalt
+\begin{align}
+\dot{Q}_k =\frac{\partial H}{\partial P_k}
+\end{align}
+\begin{align}
+\dot{P}_k= -\frac{\partial H}{\partial Q_k} \; (k=1,...,f)
+\end{align}
+Daraus resultiert die folgende Bedingung an die Abbildung $\psi$:
+\begin{align}
+\omega= \sum_{k=1}^f dP_k \wedge dQ_k= \sum_{k=1}^f d(p_k \cdot \psi) \wedge d(q_k \cdot \psi)= \psi^* (\sum_{k=1}^f dp_k \wedge dq_k)= \psi^* \omega
+\end{align}
+Definition:\\
+\\
+Sei $(M,\omega)$ eine symplektische Mannigfaltigkeit. Eine differenzierbare Abbildung $ \psi : M \longrightarrow M $ heißt kanonische Transformation, wenn sie $ \omega $ invariant lässt :$ \psi^* \omega=\omega$
+Damit lässt sich folgendes Fazit ziehen: \\
+\\
+(i) Die kanonischen Gleichungen sind forminvariant unter kanonischen Transformation.\\
+\\
+(ii) Die kanonischen Transformationen bilden eine Gruppe.\\
+\\
+(iii) Punkttransformationen, d.h. die Abbildung des Ortsraumes auf sich, sind kanonisch (genauer: lassen sich zu kanonischen Transformationen erweitern).\\
+\\
+Kriterium für $ M= \mathbb{R}^{2f}$\\
+\\
+Wir spezialisieren jetzt zu $ M= \mathbb{R}^{2f}$ in der einfachen Situation, dass $\omega$ global in der Form $ \omega=\sum_{k=1}^f dp_k \wedge dq_k $ dargestellt werden kann. In diesem Fall ist eine differenzierbare Abbildung $ \psi: \mathbb{R}^{2f} \longrightarrow \mathbb{R}^{2f} $ genau dann eine kanonische Transformation, wenn $ D_x \psi : \mathbb{R}^{2f} \longrightarrow \mathbb{R}^{2f} $ für alle $ x \in \mathbb{R}^{2f}$ symplektisch ist.
+\paragraph{Hamiltonsche Flüsse} $\,$ \\
+Sei $ (M,\omega)$ eine symplektische Mannigfaltigkeit und $X$ eine differenzierbares Vektorfeld, dessen Fluss auf ganz $ M \times \mathbb{R}$ definiert ist. Dann heißt $X$ lokal Hamiltonsch(global Hamiltonsch), falls die 1-Form $ \omega (\cdot, X) $ geschlossen (bzw. exakt) ist. Entsprechend heißt der Fluss eines lokalen (globalen) Hamiltonschen Vektorfeldes lokal(bzw. global) Hamiltonsch. Nach einem Standardresultat (Poincaré-Lemma) existiert zu einem lokalen Hamiltonschen Vektorfeld $X$ lokal eine Funktion $H$, so das gilt: $ \omega( \cdot, X)=dH$\\
+\\
+Symplektischer Gradient
+\begin{align}
+X=I(df)
+\end{align}
+\begin{align}
+X=I \alpha \; \text{falls} \omega(\cdot, X)= \alpha
+\end{align}
+Definition:\\
+\\
+Sei $(g^s)_{s \in \mathbb{R}}$ eine Schar von Diffeomorphismen : $ m \longrightarrow M $. Wir nennen diese Schar eine Einparametergruppe von kanonischen Transformationen von $(M,\omega)$, wenn gilt
+\begin{align}
+(i) \; g^0=Id
+\end{align}
+\begin{align}
+(ii) \; g^{s+t}=g^s \circ g^t= g^t \circ g^s \; (s,t \in \mathbb{R})
+\end{align}
+\begin{align}
+(iii) \; g^s  \; \text{kannonisch für alle } s \in  \mathbb{R}
+\end{align}
+Die Hamiltonschen Flüsse lassen die symplektische Struktur des Phasenraums invariant.
+\paragraph{Symmetrien und Erhaltungssätze} $\,$ \\
+Erste Integrale\\
+\\
+Wir nenne eine Funktion $ f: M \longrightarrow \mathbb{R} $ ein erstes Integral des Hamiltonschen Systems, wenn für alle $ t \in \mathbb{R}$ gilt: $ f \circ \phi_t^H =f$. Da es sich bei $ (\phi_t^H)_{t \in \mathbb{R}} $ um eine Einparametergruppe von Diffeomorphismen handelt, ist diese Bedingung äquivalent zu:
+\begin{align}
+\frac{d}{dt} f \circ \phi_t^H \vert_{t=0} = \mathcal{L}_{X_H}f=(df)(X_H)=\omega (X_H,H_f)
+\end{align}
+Als folge dessen wird klar, dass die Energie eines autonomen Hamiltonschen Systems erhalten ist:
+\begin{align}
+\frac{d}{dt} H \circ \phi_t^H \vert_{t=0} =\omega (X_H,X_H) =0
+\end{align}
+Zweimal Hamiltonsch\\
+\\
+Es sei $(M, \omega)$ eine symplektische Mannigfaltigkeit. Darauf seien zwei Funktionen $f,g: M \longrightarrow \mathbb{R} $ gegeben - wir haben jetzt also zwei "Hamiltonsche" Systeme $ (M, \omega, f) $ und $ (M, \omega , g) $ und zwei globale Hamiltonsche Flüsse $ \phi^f , \phi^g $ zu den global Hamiltonschen Vektorfeldern $ X_f := I(df) $ und $ X_g := I(dg) $. Dann gilt folgende Gleichheit:
+\begin{align}
+\frac{d}{ds} g \circ \phi_s^f \vert_{s=0} = -\frac{d}{dt} f \circ \phi_t^g \vert_{t=0} 
+\end{align}
+Definition: \\
+\\
+Sei $ \phi : M \times \mathbb{R} \longrightarrow M, (x,s) \longmapsto \phi_s (x) $, der Fluss eines global Hamiltonschen Vektorfeldes auf einer symplektischen Mannigfaltigkeit $(M, \omega)$. Dann heißt $ (\phi_s)_{s \in \mathbb{R}} $ eine Einparametergruppe von Symmetrie-Transformationen des Hamiltonschen Systems mit Hamilton-Funktion $ H: M \longrightarrow \mathbb{R}$, wenn $H$ unter $ (\phi_s)_{ s \in \mathbb{R}} $ invariant ist:
+\begin{align}
+H \circ \phi_s \; \text{für alle} \; s \in \mathbb{R}
+\end{align}
+\paragraph{Noether-Theorem} $\,$ \\
+\\
+zu jeder Einparametergruppe von Symmetrie-Transformationen eines autonomen Hamiltonschen Systems gehört ein Erhaltungssatz, und umgekehrt.\\
+\\
+Beispiel: Impulserhaltung\\
+\\
+Auf der symplektischen Mannigfaltigkeit $(M,\omega)=(\mathbb{R}, dp \wedge dq) $ hat das Hamiltonsche Vektorfeld $ I (dp)= \partial_q $ den durch $ (q,p) \circ g^s=(q+s,p) $ bestimmter Fluss $g^s$. Die von $ I(dp) $ erzeugten kanonischen Transformationen bilden also die Gruppe der Translationen in $q$. Daher bedeutet die Aussage des Noether-Theorems hier folgendes: sind die Raumtranslationen $ q \longmapsto q+s $ eine Einparametergruppe von Symmetrie-Transformationen des Hamiltonschen Systems mit Hamilton-Funktion $H$, d.h. gilt:
+\begin{align}
+\frac{d}{ds} H \circ g^s \vert_{s=0} = \frac{\partial H}{\partial q}=0
+\end{align}
+so ist der Impuls: $p=const.$ Umgekehrt bedingt die Impulserhaltung die Translationsinvarianz der Hamilton-Funktion.
+\end{document}
