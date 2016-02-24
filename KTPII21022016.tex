@@ -7,6 +7,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage[markup=nocolor,deletedmarkup=xout]{changes}
 \author{Tim Hellmuth}
 \renewcommand {\familydefault}{\sfdefault}
 \makeindex
@@ -368,7 +369,7 @@ Diese Sichtweise ("passive Transformation") ist physikalisch natürlich.\\
 Beide Sichtweisen sind mathematisch äquivalent, jedoch weist letztere Vorteile in Rechnung und Notation auf.
 \paragraph{Äußere Ableitung in Raum und Zeit} $\,$ \\
 \begin{align}
-d= d+ dt \wedge \frac{\partial}{\partial t}
+\deleted{d}= d+ dt \wedge \frac{\partial}{\partial t}
 \end{align}
 \paragraph{Faraday-Form} $\, $ \\
 \begin{align}
@@ -378,7 +379,7 @@ F= B+ e \wedge dt \in \Omega ^2 (M_4)
 [F]=\frac{Energie}{Strom} = \frac{Wirkung}{Ladung}
 \end{align}
 \begin{align}
-dF=0
+\deleted{d}F=0
 \end{align}
 \paragraph{Viererstrom} $\, $ \\
 \begin{align}
@@ -388,7 +389,7 @@ J= \rho -j \wedge dt \in \tilde{\Omega}^3 (M_4)
 [J]= Ladung
 \end{align}
 \begin{align}
-dJ=0
+\deleted{d}J=0
 \end{align}
 \paragraph{Minkowski-Modell} $\,$\\
 Übergang von einer ruhenden Spule (IS-0) zu einer bewegten Spule (IS-1).
@@ -441,6 +442,12 @@ Lorentz-Transformation
 \end{align}
 \begin{align}
 tanh(\Theta)= \frac{\vert v \vert}{c}
+\end{align}
+\begin{align}
+ch=\frac{1}{\sqrt{1-\frac{\vert v \vert^2}{c^2}}}
+\end{align}
+\begin{align}
+sh=\frac{\frac{v}{c}}{\sqrt{1-\frac{\vert v \vert^2}{c^2}}}
 \end{align}
 Invarianz des Weltvolumens unter Lorentz-Transformation
 \begin{align}
