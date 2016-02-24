@@ -220,3 +220,4 @@ pip-log.txt
 *.idx
 *.gz
 *.out
+*.soc
